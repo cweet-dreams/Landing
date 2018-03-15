@@ -94,6 +94,7 @@ blockquote {
 }
 .header .logo {
 	float: left;
+	font-size: 0;
 }
 .header .header-nav {
 	float: right;
@@ -103,10 +104,10 @@ blockquote {
 	font-size: 11px;
 	line-height: 21px;
 	letter-spacing: .3em;
-	color: #fefefe;
+	color: rgba(255 255 255 .75);
 	text-transform: uppercase;
 }
-.header .header-nav li +li {
+.header .header-nav li + li {
 	margin-left: 35px;
 }
 .title {
@@ -156,6 +157,7 @@ blockquote span,
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .btn.btn-default {
@@ -183,9 +185,6 @@ blockquote span,
 /* ===== Default component end ===== */
 
 /* CUSTOM STYLE COMPONENT START */
-.logo img{
-	display: block;
-}
 .inner {
 	background: url('../img/inner-bg.jpg') no-repeat center/cover;
 	height: 100vh;
