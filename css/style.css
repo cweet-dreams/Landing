@@ -259,4 +259,21 @@ blockquote span,
 	font-weight: 400; */
 }
 /* ==About us end== */
+/* ===Why choose us===  */
+.icon-choose-us{
+	font-size: 48.01px;
+	color: #111;
+}
+
+.title-col-choose-us{
+	font-size: 14px;
+	letter-spacing: .4em;
+	font-weight: 400;
+	color: #111;
+	margin: 35px 0;
+}
+.why-choose-us .row + .row{
+	margin-top: 75px;
+}
+/* ===Why choose us end=== */
 /* CUSTOM STYLE COMPONENT END */
