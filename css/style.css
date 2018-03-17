@@ -156,8 +156,9 @@ blockquote span,
 	border-radius: 2px;
 	font-size: 12px;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 400; 
 	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .2em;
 }
 
 .btn.btn-default {
@@ -276,4 +277,41 @@ blockquote span,
 	margin-top: 75px;
 }
 /* ===Why choose us end=== */
+/* ====Latest news==== */
+.latest-news .all-news{
+	float: right;
+	font-size: 11px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	line-height: 22px;
+	color: #999;
+}
+
+.news-item img{
+	filter: grayscale(100%);
+}
+.news-item img:hover{
+	filter:none;
+}
+.news-item .title-news{
+	font-size: 15px;
+	letter-spacing: .2em;
+	margin-top: 30px;
+	color: #777;
+}
+.news-item .date{
+	font-size: 11px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	color: #999;
+	margin-top: 17px;
+}
+
+.news-item .default-text{
+	font-weight: 400;
+	color: #777;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+/* ====Latest news end==== */
 /* CUSTOM STYLE COMPONENT END */
