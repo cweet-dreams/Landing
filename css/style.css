@@ -2,6 +2,9 @@
 *{
 	box-sizing: border-box;
 }
+*:focus{
+	outline: none;
+}
 body{
 	margin: 0;
 	background-color: #fff;
@@ -30,13 +33,24 @@ ul, ol{
 img {
 	max-width: 100%;
 }
-button {
+input,
+textarea,
+button{
 	outline: none;
 	border: none;
+}
+input[type="submit"]{
 	cursor: pointer;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
 }
 blockquote {
 	margin: 0;
+}
+.textarea{
+	resize: vertical;
 }
 /* ===== Reset end ===== */
 /* ===== Default classes start */
@@ -160,7 +174,10 @@ blockquote span,
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: .2em;
 }
-
+.btn[disabled]{
+	cursor: not-allowed;
+	opacity: .6;
+}
 .btn.btn-default {
 	background-color: #e5e5e5;
 	color: #777;
@@ -183,9 +200,50 @@ blockquote span,
 	padding: 7px 15px;
 	font-size: 11px;
 }
+.form-control{
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 36px;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #777;
+	padding-left: 13px;
+	padding-right: 13px;
+}
+.form-control:focus{
+	border-color: #111;
+}
+textarea.form-control{
+	min-height: 82px;
+	padding-top: 10px;
+}
+.form-control.desabled,
+.form-control [disabled]{
+	cursor: not-allowed;
+	opacity: .6;
+}
+.form-control.error{
+	border-color: #f57e7e;
+}
+.form-info{
+	font-size: 11px;
+	color: #aaa;
+	font-weight: 400px;
+}
+.form-info .fa{
+	font-size: 12px;
+}
 /* ===== Default component end ===== */
 
 /* CUSTOM STYLE COMPONENT START */
+/* Guide Style */
+.guide-section form .form-control {
+	margin-bottom: 10px;
+}
 /* ==Inner start== */
 .inner {
 	background: url('../img/inner-bg.jpg') no-repeat center/cover;
@@ -222,6 +280,9 @@ blockquote span,
 /* ==Inner end== */
 
 /* ==About us== */
+.about-studio{
+	border: 1px solid #ececec;
+}
 .team-wrapper{
 	overflow: hidden;
 	width: 100%;
@@ -244,7 +305,6 @@ blockquote span,
 .team-item .team-item-img:hover .team-item-skills{
 	opacity: 1;
 }
-/* .team-item-name */
 .team-item-info { 
 	display: block;
 	letter-spacing: .4em;
@@ -256,16 +316,121 @@ blockquote span,
 	display: block;
 	font-size: 12px;
 	margin-top: 15px;
-	/* text-transform: uppercase;
-	font-weight: 400; */
 }
 /* ==About us end== */
-/* ===Why choose us===  */
+
+/* == Services ==*/
+#tabs .tabs-nav li{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+#tabs .tabs-nav li span{
+	display: block;
+	color: rgba(17, 17, 17 .5)
+}
+#tabs .tabs-nav .ui-state-active span {
+	color: #000;
+}
+.tabs-wrapper{
+	overflow: hidden;
+	width: 100%;
+}
+.tabs-nav .icon{
+	font-size: 48.01px;
+	letter-spacing: .5em;
+}
+.tabs-nav .name{
+	font-family: 'Dosis';
+	font-size: 14px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	margin-top: 35px;
+}
+.tabs-wrapper .row{
+	margin-top: 78px;
+	margin-bottom: 35px;
+}
+/* == Services end==*/
+
+/* == Lets talk== */
+.lets-talk-content{
+	padding: 140px 0;
+}
+.lets-talk-content p{
+	color: rgba(255, 255, 255, .7);
+	margin-bottom: 35px;
+}
+.lets-talk .lets-talk-img{
+	margin-top: -35px;
+}
+/* == Lets talk ==*/
+
+/* == Portfolio ==*/
+.portfolio-content{
+	margin-top: 135px;
+}
+.portfolio .default-text{
+	max-width: 750px;
+	margin: auto;
+}
+#tabs-portfolio .portfolio-nav{
+	font-family: 'Dosis';
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: rgba(17, 17, 17 .5);
+	margin-bottom: 50px;
+}
+#tabs-portfolio .portfolio-nav li{
+	color: rgba(17, 17, 17 .5);
+	display: inline-block;
+	margin: 0 34px;
+}
+#tabs-portfolio .portfolio-nav .ui-state-active{
+	color: #000;
+}
+.portfolio-tabs-wrapper{
+	margin-top: 85px;
+	overflow: hidden;
+}
+.portfolio-items{
+	margin: 0 -4px;
+}
+.portfolio-items .portfolio-item{
+	width: 33.3333%;
+	padding: 0 4px;
+	float: left;
+	height: 340px;
+}
+.portfolio-items .portfolio-item img{
+	filter: grayscale(100%);
+	max-height: 100%;
+	width: 100%;
+}
+.portfolio-items .portfolio-item img:hover{
+	filter: none;
+}
+/* == Portfolio ==*/
+
+/* == Start project == */
+.start-project span{
+	color: #fff;
+	line-height: 1.733;
+}
+.start-project .btn{
+	color: #111;
+	font-size: 14px;
+}
+/* == Start project == */
+
+/* == Why choose us ==  */
 .icon-choose-us{
 	font-size: 48.01px;
 	color: #111;
+	letter-spacing: .5em;
 }
-
 .title-col-choose-us{
 	font-size: 14px;
 	letter-spacing: .4em;
@@ -276,8 +441,9 @@ blockquote span,
 .why-choose-us .row + .row{
 	margin-top: 75px;
 }
-/* ===Why choose us end=== */
-/* ====Latest news==== */
+/* == Why choose us end== */
+
+/* === Latest news == */
 .latest-news .all-news{
 	float: right;
 	font-size: 11px;
@@ -286,7 +452,6 @@ blockquote span,
 	line-height: 22px;
 	color: #999;
 }
-
 .news-item img{
 	filter: grayscale(100%);
 }
@@ -306,12 +471,23 @@ blockquote span,
 	color: #999;
 	margin-top: 17px;
 }
-
 .news-item .default-text{
 	font-weight: 400;
 	color: #777;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
-/* ====Latest news end==== */
+/* == Latest news end == */
+
+/* == Subcribe ==*/
+.subcribe button {
+	line-height: 1;
+}
+.subcribe .form-control{
+	width: 290px;
+}
+.subcribe .form-info{
+	margin-top: 17px;
+}
+/* == Subcribe end==*/
 /* CUSTOM STYLE COMPONENT END */
