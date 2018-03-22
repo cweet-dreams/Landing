@@ -325,6 +325,11 @@ textarea.form-control{
 	width: 20%;
 	text-align: center;
 }
+#tabs .tabs-nav{
+	overflow: hidden;
+	margin-top: 48px;
+	margin-bottom: 82px; 
+}
 #tabs .tabs-nav li span{
 	display: block;
 	color: rgba(17, 17, 17 .5)
@@ -347,19 +352,23 @@ textarea.form-control{
 	text-transform: uppercase;
 	margin-top: 35px;
 }
-.tabs-wrapper .row{
-	margin-top: 78px;
-	margin-bottom: 35px;
-}
 /* == Services end==*/
 
 /* == Lets talk== */
 .lets-talk-content{
 	padding: 140px 0;
 }
+
 .lets-talk-content p{
 	color: rgba(255, 255, 255, .7);
 	margin-bottom: 35px;
+	font-weight: 300;
+}
+.lets-talk-content button{
+	color: #111;
+	line-height: 1.7333;
+	font-size: 14px;
+	font-weight: 400;
 }
 .lets-talk .lets-talk-img{
 	margin-top: -35px;
@@ -382,6 +391,7 @@ textarea.form-control{
 	text-transform: uppercase;
 	color: rgba(17, 17, 17 .5);
 	margin-bottom: 50px;
+	overflow: hidden;
 }
 #tabs-portfolio .portfolio-nav li{
 	color: rgba(17, 17, 17 .5);
@@ -392,8 +402,8 @@ textarea.form-control{
 	color: #000;
 }
 .portfolio-tabs-wrapper{
-	margin-top: 85px;
 	overflow: hidden;
+	margin-top: 85px;
 }
 .portfolio-items{
 	margin: 0 -4px;
@@ -402,11 +412,9 @@ textarea.form-control{
 	width: 33.3333%;
 	padding: 0 4px;
 	float: left;
-	height: 340px;
 }
 .portfolio-items .portfolio-item img{
 	filter: grayscale(100%);
-	max-height: 100%;
 	width: 100%;
 }
 .portfolio-items .portfolio-item img:hover{
