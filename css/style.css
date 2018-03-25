@@ -243,6 +243,36 @@ textarea.form-control{
 .form-info .fa{
 	font-size: 12px;
 }
+.rhomb-icon{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	border-radius: 2px;
+	font-size: 14px;
+	transform: rotate(45deg);
+}
+.rhomb-icon.black-icon{
+	color: #fff;
+	background-color: #111111;
+}
+.rhomb-icon.transparent-icon{
+	background-color: transparent;
+	color: #111;
+	border: 1px solid  #000;
+}
+.rhomb-icon.white-icon{
+	background-color: #fff;
+	color: #222;
+}
+.rhomb-icon i{
+	transform: rotate(-45deg);
+}
+.footer{
+	margin-top: 140px;
+	margin-bottom: 60px;
+}
 /* ===== Default component end ===== */
 
 /* CUSTOM STYLE COMPONENT START */
@@ -541,7 +571,7 @@ textarea.form-control{
 	margin-left: -32px;
 	margin-top: -31px;
 }
-.slick-arrow .carousel-button{
+.slick-arrow.slick-next .carousel-button {
 	right: 0;
 	margin-right: -32px;
 }
@@ -599,11 +629,62 @@ textarea.form-control{
 .subcribe button {
 	line-height: 1;
 }
-.subcribe .form-control{
+.subcribe .form-control {
 	width: 290px;
 }
-.subcribe .form-info{
+.subcribe .form-info {
 	margin-top: 17px;
 }
 /* == Subcribe end==*/
+
+/* == Contacts == */
+.contact-item .contact-item-content {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+.contact-item .contact-item-content span {
+	display: block;
+	text-align: left;
+}
+.contact-item-content .contact-title {
+	font-family:'Dosi';
+	font-weight: 400;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	color: #777;
+}
+.contact-item-content .contact-data {
+	font-family: 'Open sans';
+	font-weight: 300;
+	font-size: 15px;
+	color: #444;
+	line-height: 1.6;
+}
+/* == Contacts end== */
+/* == FOOTER */
+.footer-content .social-nav{
+	margin-top: 24px;
+}
+.footer-content .social-nav li + li{
+	margin-left: 14px;
+}
+.footer-content .copywright{
+	margin-top: 110px;
+}
+.footer-content .copywright span{
+	display: block;
+}
+.footer-content .copywright .date{
+	font-family: 'Dosis';
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	color: #111;
+}
+
+/* ==FOOTER END */
 /* CUSTOM STYLE COMPONENT END */
