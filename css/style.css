@@ -723,23 +723,22 @@ textarea.form-control {
 }
 .contact-form {
 	margin: 0 -5px;
+}
+.contact-form .form-row {
+	margin: 0 -5px;
 	overflow: hidden;
+	margin-bottom: 20px;
 }
 .contact-form .form-col {
 	float: left;
 	width: 50%;
 	padding: 0 5px;
-	margin-bottom: 20px;
 }
 .contact-form .form-control + .form-control {
 	margin-top: 10px;
 }
 .contact-form .form-info {
 	line-height: 41px;
-	margin-left: 5px;
-}
-.contact-form button {
-margin-right: 5px;
 }
 /* == Contacts end== */
 /* == MAP == */
