@@ -54,26 +54,20 @@ textarea {
 	resize: vertical;
 }
 /* ===== Reset end ===== */
-/* ===== Default classes start */
-/* 
-	text color, text align, float, backgrounds colors, text transform
-*/
+/* ===== Default classes start  ===== */
+/* 	text color, text align, float, backgrounds colors, text transform*/
 .text-center {
 	text-align: center;
 }
-
 .text-right {
 	text-align: right;
 }
-
 .text-justify {
 	text-align: justify;
 }
-
 .bg-black {
 	background-color: #111;
 }
-
 .bg-grey {
 	background-color: #f8f8f8;
 }
@@ -88,12 +82,10 @@ textarea {
 .pull-right {
 	float: right;
 }
-/* ===== Default classes end */
+/* ===== Default classes end  ===== */
 /* ===== Default component start ===== */
-/* 
-	Buttons, text, title, section, small-section header, footer,
-	form elements, icons, tabs, blockquote, container 
-*/
+/* 	Buttons, text, title, section, small-section header, footer,
+	form elements, icons, tabs, blockquote, container */
 .default-section {
 	padding: 135px 0;
 }
@@ -102,11 +94,9 @@ textarea {
 		padding: 85px 0;
 	}
 }
-
 .small-section {
 	padding: 70px 0;
 }
-
 .container {
 	max-width: 1200px;
 	padding: 0 15px;
@@ -115,7 +105,6 @@ textarea {
 .container-fluid {
 	padding: 0 15px;
 }
-
 .title {
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
@@ -181,16 +170,13 @@ blockquote span,
 .btn.btn-default:hover {
 	background-color: #d1d0d0;
 }
-
 .btn.btn-black {
 	background-color: #323232;
 	color: #fff;
 }
-
 .btn.btn-black:hover {
 	background-color: #000;
 }
-
 .btn.btn-xs {
 	padding: 7px 15px;
 	font-size: 11px;
@@ -679,7 +665,7 @@ textarea.form-control {
 .portfolio-items .portfolio-item img:hover {
 	filter: none;
 }
-@media (max-width: 911px) {
+@media (max-width: 991px) {
 	.portfolio-items .portfolio-item {
 		width: 50%;
 	}
@@ -693,7 +679,7 @@ textarea.form-control {
 		width: 100%;
 	}
 }
-/* == Portfolio ==*/
+/* == Portfolio == */
 
 /* == Start project == */
 .start-project span {
@@ -724,7 +710,7 @@ textarea.form-control {
 		margin-bottom: 30px;
 	}
 }
-/* == Why choose us end== */
+/* == Why choose us end == */
 
 /* == Reviews == */
 .reviews-carousel {
@@ -833,8 +819,8 @@ textarea.form-control {
 		font-size: 16px;
 	}
 }
-/* Review end */
-/* === Latest news == */
+/* == Review end == */
+/* == Latest news == */
 .latest-news .all-news {
 	float: right;
 	font-size: 11px;
@@ -967,7 +953,7 @@ textarea.form-control {
 	}
 } 
 
-/* == Contacts end== */
+/* == Contacts end == */
 /* == MAP == */
 .map-container {
 	position: relative;
@@ -1009,7 +995,7 @@ textarea.form-control {
 	display: block;
 	margin-top: 28px;
 }
-/* == MAP END */
+/* == MAP END == */
 /* == FOOTER ==*/
 .footer-content .social-nav {
 	margin-top: 24px;
@@ -1035,6 +1021,5 @@ textarea.form-control {
 	text-transform: uppercase;
 	color: #111;
 }
-
 /* ==FOOTER END */
 /* CUSTOM STYLE COMPONENT END */
